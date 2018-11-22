@@ -4,7 +4,7 @@
 \RequirePackage{xkeyval}
 \RequirePackage{etoolbox}
 \RequirePackage{xcolor}
-\RequirePackage{graphicx,picinpar}
+\RequirePackage{graphicx}
 % 关于图片 graphicx
  % 如果图片没有指定后缀, 依次按下列顺序搜索
 \DeclareGraphicsExtensions{.pdf,.eps,.jpg,.png}
@@ -113,7 +113,7 @@
   Summary = {\zhlipsum[2]},
   Editor = {张三},
   Designer = {李四},
-  Price = {80.6},
+  Price = {806},
   ISBN = {978-7-302-11622-6},
 }
 \def\@title{一个中文书籍的\LaTeX{}模板}
@@ -150,7 +150,7 @@
 
 \RequirePackage[a4paper,hmargin={20mm,25mm},vmargin={25mm,25mm}]{geometry}
 \RequirePackage{fancyhdr}
-\RequirePackage{pifont,fontawesome,calc}
+\RequirePackage{pifont,calc}
 \RequirePackage{multicol}
 \RequirePackage{amsmath,amssymb,bm,extarrows}
 \RequirePackage[amsmath,thmmarks]{ntheorem}
@@ -276,22 +276,7 @@
     \mbox{}
     \newpage
     \thispagestyle{empty}
-    \mbox{}
-    \newpage
-    \thispagestyle{empty}
-    \mbox{}
-    \newpage
-    \thispagestyle{empty}
-    \mbox{}
-  }{
-    \mbox{}
-    \newpage
-    \thispagestyle{empty}
-    \mbox{}
-    \newpage
-    \thispagestyle{empty}
-    \mbox{}
-  }
+  }{}
 }
 
 \tcbset{
