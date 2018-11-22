@@ -1,0 +1,129 @@
+% !TEX Root = ../HTNotes-Demo.tex
+% !TEX program = xelatex
+\section{终端盒子使用} \label{sec:终端盒子使用}
+  \subsection{win10 终端} \label{sbsec:win10 终端}
+    注意: win10 盒子 minted 语法高亮的语言默认为 shell(sh).
+
+    \mybox{不带输出的盒子}
+      \begin{Code}[latex][][LaTeX]{win10 不带输出的盒子的使用语法}
+        \begin{Win}[minted高亮的语言]{盒子标题}
+          待显示内容
+        \end{Win}
+      \end{Code}
+      效果如下:
+      \begin{Win}{win10不带输出的盒子的使用}
+        待显示内容
+      \end{Win}
+
+    \mybox{带输出的盒子}
+      \begin{Code}[LaTeX]{win10 带输出的盒子的使用语法}
+        \begin{WinOutput}[minted高亮的语言]{盒子标题}{
+          待输出的内容
+        }
+          待显示内容
+        \end{WinOutput}
+      \end{Code}
+      效果如下:
+      \begin{WinOutput}{win10 带输出的盒子的使用语法}{
+        待输出的内容
+      }
+        待显示内容
+      \end{WinOutput}
+
+    \mybox{导入文件使用}
+      \begin{Code}[LaTeX]{导入文件使用盒子使用语法}
+        \WinFile[Python]{导入文件使用盒子}{导入文件的路径, 须加上后缀名}
+      \end{Code}
+      效果如下:
+      \WinFile[Python]{导入文件使用盒子}{Codes/helloworld.py}
+
+  \subsection{Mac 终端} \label{sbsec:Mac 终端}
+    注意: Mac 盒子 minted 语法高亮的语言默认为 shell(sh).
+
+    \mybox{不带输出的盒子}
+      \begin{Code}[latex][][LaTeX]{Mac 不带输出的盒子的使用语法}
+        \begin{Mac}[minted高亮的语言]{盒子标题}
+          待显示内容
+        \end{Mac}
+      \end{Code}
+      效果如下:
+      \begin{Mac}{Mac不带输出的盒子的使用}
+        待显示内容
+      \end{Mac}
+
+    \mybox{带输出的盒子}
+      \begin{Code}[LaTeX]{Mac 带输出的盒子的使用语法}
+        \begin{MacOutput}[minted高亮的语言]{盒子标题}{
+          待输出的内容
+        }
+          待显示内容
+        \end{MacOutput}
+      \end{Code}
+      效果如下:
+      \begin{MacOutput}{Mac 带输出的盒子的使用语法}{
+        待输出的内容
+      }
+        待显示内容
+      \end{MacOutput}
+
+    \mybox{导入文件使用}
+      \begin{Code}[LaTeX]{导入文件使用盒子使用语法}
+        \MacFile[Python]{导入文件使用盒子}{导入文件的路径, 须加上后缀名}
+      \end{Code}
+      效果如下:
+      \MacFile[Python]{导入文件使用盒子}{Codes/helloworld.py}
+
+  \subsection{Ubantu 终端} \label{sbsec:Ubantu 终端}
+    注意: Ubantu 盒子 minted 语法高亮的语言默认为 bash.
+
+    \mybox{不带输出的盒子}
+      \begin{Code}[latex][][LaTeX]{Ubantu 不带输出的盒子的使用语法}
+        \begin{Git}[minted高亮的语言]{盒子标题}
+          待显示内容
+        \end{Git}
+      \end{Code}
+      效果如下:
+      \begin{Git}{Ubantu不带输出的盒子的使用}
+        待显示内容
+      \end{Git}
+
+    \mybox{带输出的盒子}
+      \begin{Code}[LaTeX]{Ubantu 带输出的盒子的使用语法}
+        \begin{GitOutput}[minted高亮的语言]{盒子标题}{
+          待输出的内容
+        }
+          待显示内容
+        \end{GitOutput}
+      \end{Code}
+      效果如下:
+      \begin{GitOutput}{Ubantu 带输出的盒子的使用语法}{
+        待输出的内容
+      }
+        待显示内容
+      \end{GitOutput}
+
+    \mybox{导入文件使用}
+      \begin{Code}[LaTeX]{导入文件使用盒子使用语法}
+        \GitFile[Python]{导入文件使用盒子}{导入文件的路径, 须加上后缀名}
+      \end{Code}
+      效果如下:
+      \GitFile[Python]{导入文件使用盒子}{Codes/helloworld.py}
+
+\section{代码环境使用} \label{sec:代码环境使用}
+  \subsection{直接输入代码环境} \label{sbsec:直接输入代码环境}
+    \begin{Win}[LaTeX]{直接输入代码环境使用语法}
+      \begin{Code}[minted高亮语言][交叉引用标签][右上角显示语言]{显示的标题}
+        代码
+      \end{Code}
+    \end{Win}
+    效果如下:
+    \begin{Code}[sh][交叉引用标签][右上角显示语言]{显示的标题}
+      代码
+    \end{Code}
+
+  \subsection{外部文件导入代码环境} \label{sbsec:外部文件导入代码环境}
+    \begin{Win}[LaTeX]{直接输入代码环境使用语法}
+      \CodeFile[minted高亮语言][交叉引用标签][右上角显示语言]{显示的标题}{导入文件的路径, 须加上后缀名}
+    \end{Win}
+    效果如下:
+    \CodeFile{显示的标题}{Codes/helloworld.py}

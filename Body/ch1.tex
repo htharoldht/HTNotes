@@ -1,0 +1,174 @@
+% !TEX root = ../HTNotes-Demo.tex
+% !TEX program = xelatex
+
+本文档类已加载的宏包如下:
+
+\begin{tabular*}{\textwidth}{cccccccc}
+\toprule
+  xkyval & etoolbox & xcolor & graphicx & ctex & geometry & fancyhdr & pifont \\
+  calc & multicol & amsmath & amssymb & bm & extarrows & ntheorem & caption \\
+  subcaption & varwidth & enumitem & footmisc & ean13isbn & fancybox & tcolorbox & titletoc \\
+  tabu & booktabs & CJKnumb & ocgx2 & hyperref & mdframed & printlen & \\
+\bottomrule
+\end{tabular*}
+
+\section{模板默认设置} \label{sec:模板默认设置}
+\begin{Code}[LaTeX]{模板最小运行示例默认设置}
+  % !TEX program = xelatex %% 使用 xelatex 编译
+  % !TEX encode = UTF-8 %% 文件编码采用 UTF-8
+  \documentclass{HTNotes}
+
+  \begin{document}
+  \maketitle % 添加封面
+  \makeflypage
+
+  \frontmatter
+  \tableofcontents
+
+  \mainmatter
+  \chapter{foo}
+    \section{foo}
+    ...
+
+  \backmatter
+  \makebackcover
+  \end{document}
+\end{Code}
+\begin{Win}{几点说明}
+  1. setting.tex需要放在与HTNotes,cls的同一目录下, 为自动加载.
+  2. settings.tex可以作为导言区使用, 以避免导言区过长, 影响可读性.
+\end{Win}
+
+\section{模板参数说明} \label{sec:模板参数说明}
+  参数均采用键值对的方式指定, 接口如下
+  \begin{Code}[LaTeX]{接口}
+  \HTset{
+    key = val,
+    key = val,
+    ...
+  }
+  \end{Code}
+
+  \subsection{封面相关元素设置} \label{sbsec:封面相关元素设置}
+    \begin{enumerate}
+      \item 颜色 \verb|cvcolor|
+
+        模板提供了 \verb|orange|, \verb|green|, \verb|violet|, \verb|blue|四种颜色.
+
+        默认为 \verb|blue|.
+
+      \item {丛书图标} \verb|logo|
+
+        模板提供了 \verb|Lion|, \verb|Mine|, \verb|user1|, \verb|user2四种图标|.
+
+        用户只需要将图片命名为相应的选项即可.
+
+        默认为 \verb|Lion|.
+
+      \item 丛书名称 \verb|Series|
+
+        可为空. 默认为计算机应用技术丛书.
+
+      \item 副标题 \verb|SubTitle|
+
+        可为空. 默认为这里可以放一个副标题.
+
+      \item 封面书籍简介 \verb|Introduction|
+
+        为文字或图片. 默认为一大段话.
+
+      \item 版次 \verb|Edition|
+
+        可为空. 默认为1.
+
+      \item 出版社 \verb|Publisher|
+
+        默认为 \LaTeX Studio 出版社.
+    \end{enumerate}
+
+  \subsection{PDF信息设置} \label{sbsec:PDF信息设置}
+    \begin{enumerate}
+      \item PDF主题 \verb|Subject|
+
+        默认为空.
+
+      \item PDF 创建程序 \verb|Producer|
+
+        默认为 XeLaTeX+TeXLive 2018.
+
+      \item PDF 关键词 \verb|Keywords|
+
+        默认为空.
+    \end{enumerate}
+
+  \section{版权页信息设置} \label{sec:版权页信息设置}
+    \begin{enumerate}
+      \item 字数统计 \verb|Words|
+
+        默认为666千字.
+
+      \item 反馈邮箱 \verb|Email|
+
+        默认为 \href{mailto:htharoldht@Gmail.com}{我的邮箱}.
+
+      \item 反馈网站 \verb|Website|
+
+        默认为 \href{https://htharoldht.com}{我的网站}
+    \end{enumerate}
+
+  \subsection{空白页信息设置} \label{sbsec:空白页信息设置}
+    在扉页和前言也之间有时会需要一页作为编委会介绍.
+
+    空白页 \verb|ExtraPage|
+
+    只需要填写内容即可, 有内容即为真, 无则隐藏.
+
+    如 \verb|ExtraPage={foo}|
+
+    \begin{enumerate}
+      \item 前言内容 \verb|Preface|
+
+        直接填写内容即可, 默认为中文乱数假文.
+
+      \item 前言作者 \verb|Writer|
+
+        默认为书籍作者.
+    \end{enumerate}
+
+  \subsection{封底信息设置} \label{sbsec:封底信息设置}
+    \begin{enumerate}
+      \item 封底后记 \verb|Summary|
+
+        可为空. 默认为中文乱数假文.
+
+      \item 编辑 \verb|Editor|
+
+        默认为张三.
+
+      \item 封面设计 \verb|Designer|
+
+        默认为李四.
+
+      \item 价格 \verb|Price|
+
+        默认为806, 我的大学宿舍.
+
+      \item ISBN 编号. \verb|ISBN|
+
+        默认为978-7-302-11622-6.
+    \end{enumerate}
+
+  \subsection{其他几点说明} \label{sbsec:其他几点说明}
+    \begin{enumerate}
+      \item 若要使用用户字体, 须用
+        \mint{LaTeX}|\documentclass[customfont=true]{HTNotes}|
+        且需要安装有思源宋体、思源黑体、文泉驿微米黑、造字工坊的刻宋、郎宋、黄金时代
+
+      \item 答案初始显示 \verb|answer|
+
+        可为 \verb|true|或\verb|false|
+
+        默认为false，即初始不显示答案.
+
+      \item 若使用了minted, 则编译选项须有--shell-escape
+    \end{enumerate}
