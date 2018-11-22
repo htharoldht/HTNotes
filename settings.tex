@@ -1,0 +1,59 @@
+% !TEX root = ./HTNotes-Demo.tex
+% !TEX program = xelatex
+
+\usepackage{zhlipsum}
+\usepackage{HTNotes-code}
+
+\fancyhead[C]{\includegraphics[height=0.7cm]{Mine}}
+
+\title{HTNotes 使用说明}
+\author{张三}
+\HTset{
+  % 封面颜色: orange,green,violet,blue,默认为 blue
+  % cvcolor = {blue},
+  % logo: Lion,Mine,user1,user2,默认为 Lion,将图片命名为相应的选项即可
+  % logo = {Mine},
+  % answer: true|false,显示答案，默认为false，即不显示
+  % answer = {true},
+  % PDF 主题: 默认为空
+  % Subject = {},
+  % PDF 创建程序: 默认为 XeLaTeX+TeXLive 2018
+  % Producer = {},
+  % PDF 关键词: 默认为空
+  % Keywords = {},
+  % 丛书系列名称，可为空
+  % Series = {},
+  % 副标题，可为空
+  % SubTitle = {},
+  % 封面书籍简介，可为文字或图片
+  % Introduction = {},
+  % 版次，可为空
+  % Edition = {1},
+  % 出版社
+  % Publisher = {},
+  % 字数统计
+  % Words = {},
+  % 反馈邮箱
+  % Email = {},
+  % 反馈网站
+  % Website = {},
+  % 空白页
+  % ExtraPage = {},
+  % 前言
+  % Preface = {},
+  % 前言作者，为空则为书籍作者
+  % Writer = {},
+  % 封底后记
+  % Summary = {},
+  % 编辑
+  % Editor = {},
+  % 封面设计
+  % Designer = {},
+  % 价格
+  % Price = {},
+  % ISBN 编号
+  % ISBN = {},
+}
+
+\numberwithin{equation}{section}
+\renewcommand\theequation{\arabic{section}-\arabic{equation}}

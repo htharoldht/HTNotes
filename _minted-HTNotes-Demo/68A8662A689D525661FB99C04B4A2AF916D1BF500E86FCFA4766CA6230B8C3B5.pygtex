@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+TensorFlow@xubuntu:\PYGZti{}\PYGZdl{}
+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{} TRAINING \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}
+Epoch: \PYG{l+m}{004}/020 cost: \PYG{l+m}{1}.41867 train\PYGZus{}accuray:0.63000 test\PYGZus{}accuray:0.62820
+Epoch: \PYG{l+m}{008}/020 cost: \PYG{l+m}{0}.98922 train\PYGZus{}accuray:0.71000 test\PYGZus{}accuray:0.72040
+Epoch: \PYG{l+m}{012}/020 cost: \PYG{l+m}{0}.81536 train\PYGZus{}accuray:0.70000 test\PYGZus{}accuray:0.76270
+Epoch: \PYG{l+m}{016}/020 cost: \PYG{l+m}{0}.71605 train\PYGZus{}accuray:0.83000 test\PYGZus{}accuray:0.78570
+Epoch: \PYG{l+m}{020}/020 cost: \PYG{l+m}{0}.65017 train\PYGZus{}accuray:0.82000 test\PYGZus{}accuray:0.80130
+\end{Verbatim}

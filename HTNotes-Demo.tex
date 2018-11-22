@@ -1,0 +1,22 @@
+% !TEX program = xelatex
+% !TEX encoding = UTF-8
+% !TEX options = --shell-escape
+
+% customfont需要思源宋体、思源黑体、文泉驿微米黑、造字工坊的刻宋、郎宋、黄金时代，默认为 false
+% \documentclass[openany]{HTNotes}
+\documentclass[openany,customfont=true]{HTNotes}
+
+\begin{document}
+\maketitle
+\makeflypage
+
+\frontmatter
+\tableofcontents
+
+\mainmatter
+\chapter{绪论}
+  \input{ch1}
+
+\backmatter
+\makebackcover
+\end{document}

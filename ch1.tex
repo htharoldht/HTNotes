@@ -1,0 +1,128 @@
+% !TEX Root = ./HTNotes-Demo.tex
+% !TEX program = xelatex
+\section{title} \label{sec:title}
+
+\subsection{title} \label{sbsec:title}
+
+\begin{Win}{displayTitle}
+  天气好吗？吃饱了吗？
+\end{Win}
+
+\begin{WinOutput}{
+  outputContext
+}{displayTitle}
+  天气好吗？吃饱了吗？
+\end{WinOutput}
+
+\begin{Mac}{displayTitle}
+  天气好吗？吃饱了吗？
+\end{Mac}
+
+\begin{MacOutput}{
+  outputContext
+}{displayTitle}
+  天气好吗？吃饱了吗？
+\end{MacOutput}
+
+\begin{GitOutput}[bash]{
+    outputContext
+  }{displayTitle}
+  #include<stdio.h>
+  #include<string.h>
+  int main() {
+    printf("hello, world");
+    return 0;
+  }
+\end{GitOutput}
+
+\begin{Git}[c]{displayTitle}
+  #include<stdio.h>
+  #include<string.h>
+  int main() {
+    printf("hello, world");
+    return 0;
+  }
+\end{Git}
+
+\begin{Code}[c]{displayTitle}
+#include<stdio.h>
+#include<string.h>
+int main() {
+  printf("hello, world");
+  return 0;
+}
+\end{Code}
+
+  \begin{Code}[matlab][m:2][MATLAB]{Matlab求解}
+    b1 = [-6;0];
+    a1 = [-3 -2;1 0];
+    d1 = [0;5/2];
+    format rat;
+    alpha1 = b1\(a1*d1) % 右乘a1
+  \end{Code}
+
+\WinFile[Python]{testInput}{helloworld.py}
+\MacFile[Python]{testInput}{helloworld.py}
+\GitFile[Python]{testInput}{helloworld.py}
+\CodeFile{testInput}{helloworld.py}
+
+\begin{minted}{HTML}
+<html>
+<head>
+<!-- 网页头部, 用以申明网页标题和引入的格式 -->
+<title>你好, 世界!</title>
+</head>
+<body>
+<!-- 网页主体 -->
+</body>
+</html>
+\end{minted}
+
+\begin{Git}{TensorFlow@xubuntu:$\sim$}
+TensorFlow@xubuntu:~$
+---------- TRAINING -------------
+Epoch: 004/020 cost: 1.41867 train_accuray:0.63000 test_accuray:0.62820
+Epoch: 008/020 cost: 0.98922 train_accuray:0.71000 test_accuray:0.72040
+Epoch: 012/020 cost: 0.81536 train_accuray:0.70000 test_accuray:0.76270
+Epoch: 016/020 cost: 0.71605 train_accuray:0.83000 test_accuray:0.78570
+Epoch: 020/020 cost: 0.65017 train_accuray:0.82000 test_accuray:0.80130
+\end{Git}
+
+\begin{GitOutput}{Output Data}{TensorFlow@xubuntu:$\sim$}
+TensorFlow@xubuntu:~$ python3 test.py
+Extracting data/train-images-idx3-ubyte.gz
+Extracting data/train-labels-idx1-ubyte.gz
+Extracting data/t10k-images-idx3-ubyte.gz
+Extracting data/t10k-labels-idx1-ubyte.gz
+train shape: (55000, 784) (55000, 10)
+test  shape: (10000, 784) (10000, 10)
+----------MNIST loaded----------------
+NeuralNetwork Ready!
+2018-08-02 00:11:15.818190: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-08-02 00:11:16.044897: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties:
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:0a:00.0
+totalMemory: 10.92GiB freeMemory: 3.04GiB
+2018-08-02 00:11:16.044948: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:0a:00.0, compute capability: 6.1)
+---------- TRAINING -------------
+Epoch: 004/020 cost: 1.41867 train_accuray:0.63000 test_accuray:0.62820
+Epoch: 008/020 cost: 0.98922 train_accuray:0.71000 test_accuray:0.72040
+Epoch: 012/020 cost: 0.81536 train_accuray:0.70000 test_accuray:0.76270
+Epoch: 016/020 cost: 0.71605 train_accuray:0.83000 test_accuray:0.78570
+Epoch: 020/020 cost: 0.65017 train_accuray:0.82000 test_accuray:0.80130
+
+Extracting data/train-images-idx3-ubyte.gz
+Extracting data/train-labels-idx1-ubyte.gz
+Extracting data/t10k-images-idx3-ubyte.gz
+Extracting data/t10k-labels-idx1-ubyte.gz
+train shape: (55000, 784) (55000, 10)
+test  shape: (10000, 784) (10000, 10)
+----------MNIST loaded----------------
+NeuralNetwork Ready!
+2018-08-02 00:11:15.818190: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-08-02 00:11:16.044897: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties:
+name: GeForce GTX 1080 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:0a:00.0
+totalMemory: 10.92GiB freeMemory: 3.04GiB
+2018-08-02 00:11:16.044948: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1080 Ti, pci bus id: 0000:0a:00.0, compute capability: 6.1)
+\end{GitOutput}

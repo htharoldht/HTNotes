@@ -1,0 +1,38 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+TensorFlow@xubuntu:\PYGZti{}\PYGZdl{} python3 test.py
+Extracting data/train\PYGZhy{}images\PYGZhy{}idx3\PYGZhy{}ubyte.gz
+Extracting data/train\PYGZhy{}labels\PYGZhy{}idx1\PYGZhy{}ubyte.gz
+Extracting data/t10k\PYGZhy{}images\PYGZhy{}idx3\PYGZhy{}ubyte.gz
+Extracting data/t10k\PYGZhy{}labels\PYGZhy{}idx1\PYGZhy{}ubyte.gz
+train shape: \PYG{o}{(}\PYG{l+m}{55000}, \PYG{l+m}{784}\PYG{o}{)} \PYG{o}{(}\PYG{l+m}{55000}, \PYG{l+m}{10}\PYG{o}{)}
+\PYG{n+nb}{test}  shape: \PYG{o}{(}\PYG{l+m}{10000}, \PYG{l+m}{784}\PYG{o}{)} \PYG{o}{(}\PYG{l+m}{10000}, \PYG{l+m}{10}\PYG{o}{)}
+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}MNIST loaded\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}
+NeuralNetwork Ready!
+\PYG{l+m}{2018}\PYGZhy{}08\PYGZhy{}02 \PYG{l+m}{00}:11:15.818190: I tensorflow/core/platform/cpu\PYGZus{}feature\PYGZus{}guard.cc:137\PYG{o}{]} Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+\PYG{l+m}{2018}\PYGZhy{}08\PYGZhy{}02 \PYG{l+m}{00}:11:16.044897: I tensorflow/core/common\PYGZus{}runtime/gpu/gpu\PYGZus{}device.cc:1030\PYG{o}{]} Found device \PYG{l+m}{0} with properties:
+name: GeForce GTX \PYG{l+m}{1080} Ti major: \PYG{l+m}{6} minor: \PYG{l+m}{1} memoryClockRate\PYG{o}{(}GHz\PYG{o}{)}: \PYG{l+m}{1}.582
+pciBusID: \PYG{l+m}{0000}:0a:00.0
+totalMemory: \PYG{l+m}{10}.92GiB freeMemory: \PYG{l+m}{3}.04GiB
+\PYG{l+m}{2018}\PYGZhy{}08\PYGZhy{}02 \PYG{l+m}{00}:11:16.044948: I tensorflow/core/common\PYGZus{}runtime/gpu/gpu\PYGZus{}device.cc:1120\PYG{o}{]} Creating TensorFlow device \PYG{o}{(}/device:GPU:0\PYG{o}{)} \PYGZhy{}\PYGZgt{} \PYG{o}{(}device: \PYG{l+m}{0}, name: GeForce GTX \PYG{l+m}{1080} Ti, pci bus id: \PYG{l+m}{0000}:0a:00.0, compute capability: \PYG{l+m}{6}.1\PYG{o}{)}
+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{} TRAINING \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}
+Epoch: \PYG{l+m}{004}/020 cost: \PYG{l+m}{1}.41867 train\PYGZus{}accuray:0.63000 test\PYGZus{}accuray:0.62820
+Epoch: \PYG{l+m}{008}/020 cost: \PYG{l+m}{0}.98922 train\PYGZus{}accuray:0.71000 test\PYGZus{}accuray:0.72040
+Epoch: \PYG{l+m}{012}/020 cost: \PYG{l+m}{0}.81536 train\PYGZus{}accuray:0.70000 test\PYGZus{}accuray:0.76270
+Epoch: \PYG{l+m}{016}/020 cost: \PYG{l+m}{0}.71605 train\PYGZus{}accuray:0.83000 test\PYGZus{}accuray:0.78570
+Epoch: \PYG{l+m}{020}/020 cost: \PYG{l+m}{0}.65017 train\PYGZus{}accuray:0.82000 test\PYGZus{}accuray:0.80130
+
+Extracting data/train\PYGZhy{}images\PYGZhy{}idx3\PYGZhy{}ubyte.gz
+Extracting data/train\PYGZhy{}labels\PYGZhy{}idx1\PYGZhy{}ubyte.gz
+Extracting data/t10k\PYGZhy{}images\PYGZhy{}idx3\PYGZhy{}ubyte.gz
+Extracting data/t10k\PYGZhy{}labels\PYGZhy{}idx1\PYGZhy{}ubyte.gz
+train shape: \PYG{o}{(}\PYG{l+m}{55000}, \PYG{l+m}{784}\PYG{o}{)} \PYG{o}{(}\PYG{l+m}{55000}, \PYG{l+m}{10}\PYG{o}{)}
+\PYG{n+nb}{test}  shape: \PYG{o}{(}\PYG{l+m}{10000}, \PYG{l+m}{784}\PYG{o}{)} \PYG{o}{(}\PYG{l+m}{10000}, \PYG{l+m}{10}\PYG{o}{)}
+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}MNIST loaded\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}
+NeuralNetwork Ready!
+\PYG{l+m}{2018}\PYGZhy{}08\PYGZhy{}02 \PYG{l+m}{00}:11:15.818190: I tensorflow/core/platform/cpu\PYGZus{}feature\PYGZus{}guard.cc:137\PYG{o}{]} Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+\PYG{l+m}{2018}\PYGZhy{}08\PYGZhy{}02 \PYG{l+m}{00}:11:16.044897: I tensorflow/core/common\PYGZus{}runtime/gpu/gpu\PYGZus{}device.cc:1030\PYG{o}{]} Found device \PYG{l+m}{0} with properties:
+name: GeForce GTX \PYG{l+m}{1080} Ti major: \PYG{l+m}{6} minor: \PYG{l+m}{1} memoryClockRate\PYG{o}{(}GHz\PYG{o}{)}: \PYG{l+m}{1}.582
+pciBusID: \PYG{l+m}{0000}:0a:00.0
+totalMemory: \PYG{l+m}{10}.92GiB freeMemory: \PYG{l+m}{3}.04GiB
+\PYG{l+m}{2018}\PYGZhy{}08\PYGZhy{}02 \PYG{l+m}{00}:11:16.044948: I tensorflow/core/common\PYGZus{}runtime/gpu/gpu\PYGZus{}device.cc:1120\PYG{o}{]} Creating TensorFlow device \PYG{o}{(}/device:GPU:0\PYG{o}{)} \PYGZhy{}\PYGZgt{} \PYG{o}{(}device: \PYG{l+m}{0}, name: GeForce GTX \PYG{l+m}{1080} Ti, pci bus id: \PYG{l+m}{0000}:0a:00.0, compute capability: \PYG{l+m}{6}.1\PYG{o}{)}
+\end{Verbatim}
