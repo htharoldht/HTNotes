@@ -322,8 +322,8 @@
   colbacklower=tcbcol@back!5!yellow!10!white,%
   collower=linux,%
   gitexample,%
-  title={#3},%
-  comment={\small\sffamily#2},%
+  title={#2},%
+  comment={\small\sffamily#3},%
   minted language=#1%
 }
 
@@ -373,7 +373,7 @@
 % }{displayTitle}
 %   displayContext
 % \end{WinOutput}
-\DeclareTCBListing{WinOutput}{ O{bash} m m }{%
+\DeclareTCBListing{WinOutput}{ O{sh} m m }{%
   listing engine=minted,%
   minted style=trac,%
   minted options={%
@@ -386,8 +386,8 @@
   listing and comment,%
   colbacklower=tcbcol@back!5!yellow!10!white,%
   collower=linux,%
-  title={#3},%
-  comment={\small\sffamily#2},%
+  title={#2},%
+  comment={\small\sffamily#3},%
   minted language=#1%
 }
 
@@ -395,7 +395,7 @@
 % \begin{Win}[mintedLanguage]{displayTitle}
 %   displayContext
 % \end{Win}
-\DeclareTCBListing{Win}{ O{bash} m }{%
+\DeclareTCBListing{Win}{ O{sh} m }{%
   listing engine=minted,%
   minted style=trac,%
   minted options={%
@@ -412,7 +412,7 @@
 
 % 导入排版
 % \WinFile[mintedLanguage]{displayTitle}{filePath}
-\DeclareTCBInputListing{\WinFile}{ O{bash} m m }{%
+\DeclareTCBInputListing{\WinFile}{ O{sh} m m }{%
   listing engine=minted,%
   minted style=trac,%
   minted options={%
@@ -437,7 +437,7 @@
 % }{displayTitle}
 %   displayContext
 % \end{MacOutput}
-\DeclareTCBListing{MacOutput}{ O{bash} m m }{%
+\DeclareTCBListing{MacOutput}{ O{sh} m m }{%
   listing engine=minted,%
   minted style=trac,%
   minted options={%
@@ -450,8 +450,8 @@
   appledark,%
   colbacklower=tcbcol@back!5!yellow!10!white,%
   collower=linux,%
-  title={#3},%
-  comment={\small\sffamily#2},%
+  title={#2},%
+  comment={\small\sffamily#3},%
   minted language=#1%
 }
 
@@ -459,7 +459,7 @@
 % \begin{Mac}[mintedLanguage]{displayTitle}
 %   displayContext
 % \end{Mac}
-\DeclareTCBListing{Mac}{ O{bash} m }{%
+\DeclareTCBListing{Mac}{ O{sh} m }{%
   listing engine=minted,%
   minted style=trac,%
   minted options={%
@@ -476,7 +476,7 @@
 
 % 导入排版
 % \MacFile[mintedLanguage]{displayTitle}{filePath}
-\DeclareTCBInputListing{\MacFile}{ O{bash} m m }{%
+\DeclareTCBInputListing{\MacFile}{ O{sh} m m }{%
   listing engine=minted,%
   minted style=trac,%
   minted options={%
