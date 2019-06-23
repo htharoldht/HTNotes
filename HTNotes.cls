@@ -454,17 +454,17 @@
   %----- logo
   \node at ([yshift=-2.6cm,xshift=2.5cm]current page.north west) {\usebox{\Mylogo}};
   %----- 丛书名称
-  \ifdefempty{\Book@Series}{}{
+  \ifstrempty{\Book@Series}{}{
   \node[above right] at ([xshift=5cm,yshift=-3cm]current page.north west){\LARGE\hjsd\hjsdf\Book@Series};}
   %----- 书名与副标题
-  \ifdefempty{\Book@SubTitle}{
+  \ifstrempty{\Book@SubTitle}{
     \node[cvtext,text width=17cm,inner sep=0.3cm] at ([yshift=-6.5cm]current page.north) {\centerline{\fontsize{40pt}{48pt}\selectfont\langsong\langsongf\@title}};
   }{
     \node[cvtext,right,text width=17cm,inner sep=0.3cm] at ([xshift=1cm,yshift=-6cm]current page.north west) {\fontsize{40pt}{48pt}\selectfont\langsong\langsongf\@title};
     \node[cvtext,above left] at ([xshift=-1cm,yshift=-8.5cm]current page.north east) {\LARGE \sffamily ------~\Book@SubTitle};
   }
   %----- 右下角的版本号
-  \ifdefempty{\Book@Edition}{}{
+  \ifstrempty{\Book@Edition}{}{
   \fill[themecolor]([xshift=-2.5cm]current page.south east)-- ++(-5,0)-- ++(7.5,7.5)-- ++(0,-5)--cycle;
   \node [white] at([xshift=-2.8cm,yshift=2.8cm]current page.south east)[rotate=45]{\bfseries\sffamily\LARGE 第\CJKnumber{\Book@Edition}版};
   \node [white] at([xshift=-2.2cm,yshift=2.2cm]current page.south east)[rotate=45]{\bfseries\LARGE Edition \ROMAN{\Book@Edition}};
@@ -481,7 +481,7 @@
     ([xshift=-6.5cm]current page.south east)-- ++(-0.5,0) -- ++(7,7) -- ++(0,-0.5) -- cycle;}
   \node[right] at ([xshift=6.5cm,yshift=2cm]current page.south west){\LARGE\KeSong\KeSongf\Book@Publisher};
   %----- 简介与作者
-  \ifdefempty{\Book@Introduction}
+  \ifstrempty{\Book@Introduction}
   {\node (image) at ([xshift=-1.5cm,yshift=-3cm]current page.center){
   \rule{8cm}{3cm}};
   \draw[white,line width=1mm](image.east)-- ++(4,0) node[above left,text=black]{\LARGE\itshape\makebox[3em][s]{\LARGE\itshape\@author}\hspace{0.5em}编著};}
@@ -526,7 +526,7 @@
 \fill[themecolor!30] ([yshift=-4cm]current page.north west) rectangle ([yshift=-9cm]current page.north east);
 %------ 致谢
 \node[below] at ([xshift=-13cm,yshift=-10cm] current page.north east) {
-  \ifdefempty{\Book@Summary}{}{
+  \ifstrempty{\Book@Summary}{}{
   \begin{tcolorbox}[
   enhanced jigsaw,colframe=themecolor!70,interior hidden,
   breakable,before skip=10pt,after skip=10pt,text width=10cm
@@ -584,14 +584,14 @@
       {\normalsize\texttt{\Book@Website}}\\
       {\normalsize\texttt{\Book@Email}}\\
       {\footnotesize {\heiti 开本}：\rndprintlength{\paperwidth}$\times$\rndprintlength{\paperheight} \hspace{0.5em} {\heiti 字数}：\Book@Words}\\[0pt]
-      \ifdefempty{\Book@Edition}{}{{\small \the\year 年\the\month 月 第 \Book@Edition\ 版~第 1 次印刷}\\[-5pt]}
+      \ifstrempty{\Book@Edition}{}{{\small \the\year 年\the\month 月 第 \Book@Edition\ 版~第 1 次印刷}\\[-5pt]}
       {\small {\heiti 印数}：001 $\sim$ 100 册 \hspace*{0.5em} {\heiti 定价}：\Book@Price 元}\\[5pt]
       \hrule
       \vskip5pt
       {\small 本书如有缺页、倒页、脱页，请自行处理一下}
     \end{center}
   \end{titlepage}
-  \ifdefempty{\Book@ExtraPage}{}{
+  \ifstrempty{\Book@ExtraPage}{}{
     \pagestyle{empty}
     \ifodd
       \c@page
@@ -602,7 +602,7 @@
     \fi
     \Book@ExtraPage
   }
-  \ifdefempty{\Book@Preface}{}{{
+  \ifstrempty{\Book@Preface}{}{{
     \pagestyle{empty}
     \clearpage
     \ifodd
@@ -623,7 +623,7 @@
     \vspace*{2cm}
 
     \begin{flushright}
-      \ifdefempty{\Book@Writer}{\@author}{\Book@Writer}
+      \ifstrempty{\Book@Writer}{\@author}{\Book@Writer}
 
       \the\year 年 \the\month 月
     \end{flushright}
